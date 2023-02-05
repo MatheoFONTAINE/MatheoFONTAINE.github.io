@@ -1,6 +1,12 @@
 /* Normalizer */
 @import url('./normalize.css');
 
+/* Modules */
+@import url('./blaze.css');
+
+/* Stylesheets */
+@import url('./slider.css');
+
 html {
     --c1: #231942;
     --c2: #5E548E;
@@ -28,6 +34,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 .content-wrapper>main {
     background-color: var(--c1);
     width: 100%;
+}
+
+section {
+    padding: 1em;
 }
 
 @media (width >= 1024px ) {

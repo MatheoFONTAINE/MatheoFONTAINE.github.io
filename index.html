@@ -34,9 +34,32 @@
 <body>
   <div class="content-wrapper">
     <main>
-      <h1>Hello world</h1>
+      <section id="main-slider" class="blaze-slider">
+        <div class="blaze-container">
+          <div class="blaze-track-container">
+            <div class="blaze-track">
+              <!-- ... -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="controls">
+          <button class="blaze-prev">prev</button>
+          <div class="blaze-pagination"></div>
+          <button class="blaze-next">next</button>
+        </div>
+      </section>
     </main>
   </div>
+
+  <template id="slider-card-template">
+    <article class="slider-card" tabindex="0">
+      <img src="#" alt="game picture">
+      <div class="title-wrapper">
+        <h3></h3>
+      </div>
+    </article>
+  </template>
 
   <!-- App -->
   <script type="module" src="js/app.js"></script>
