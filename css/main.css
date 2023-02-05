@@ -1,0 +1,21 @@
+/* Normalizer */
+@import url('./normalize.css');
+
+html {
+    --c1: #231942;
+    --c2: #5E548E;
+    --c3: #9F86C0;
+    --c4: #BE95C4;
+    --c5: #E0B1CB;
+    --tag-bg: #FF9901;
+    --grey-btn: #393838;
+    --grey-btn-hover: #494949;
+
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Reset of body, titles & paragraphs margin */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
