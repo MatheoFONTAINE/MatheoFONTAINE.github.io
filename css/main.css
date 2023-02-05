@@ -23,11 +23,19 @@ body, h1, h2, h3, h4, h5, h6, p {
 .content-wrapper {
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
 }
 
 .content-wrapper>main {
     background-color: var(--c1);
-    border-radius: 15px;
     width: 100%;
+}
+
+@media (width >= 1024px ) {
+    .content-wrapper {
+        padding: 20px;
+    }
+    
+    .content-wrapper>main {
+        border-radius: 15px;
+    }
 }
