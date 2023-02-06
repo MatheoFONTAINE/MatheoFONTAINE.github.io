@@ -5,6 +5,7 @@
 @import url('./blaze.css');
 
 /* Stylesheets */
+@import url('./projects.css');
 @import url('./slider.css');
 
 html {
@@ -29,15 +30,26 @@ body, h1, h2, h3, h4, h5, h6, p {
 .content-wrapper {
     max-width: 1200px;
     margin: auto;
+
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 .content-wrapper>main {
     background-color: var(--c1);
     width: 100%;
+
 }
 
 section {
     padding: 1em;
+    scroll-snap-align: start;
+}
+
+section:first-child {
+    scroll-snap-align: end;
 }
 
 @media (width >= 1024px ) {

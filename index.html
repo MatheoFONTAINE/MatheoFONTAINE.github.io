@@ -49,6 +49,23 @@
           <button class="blaze-next">next</button>
         </div>
       </section>
+
+      <section id="projects" class="projects">
+        <div class="filters">
+          <select id="engine">
+            <option>Moteur</option>
+          </select>
+          <select id="language">
+            <option>Langage</option>
+          </select>
+          <select id="platform">
+            <option>Plateforme</option>
+          </select>
+        </div>
+        <div class="project-list">
+          <!-- ... -->
+        </div>
+      </section>
     </main>
   </div>
 
@@ -58,6 +75,13 @@
       <div class="title-wrapper">
         <h3></h3>
       </div>
+    </article>
+  </template>
+
+  <template id="project-card-template">
+    <article tabindex="0">
+      <img src="#" alt="game picture">
+      <h3></h3>
     </article>
   </template>
 
