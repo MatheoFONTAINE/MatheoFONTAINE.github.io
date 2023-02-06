@@ -1,3 +1,5 @@
+import about from "./components/about.js";
+import contactForm from "./components/contactForm.js";
 import dataLoader from "./components/dataLoader.js";
 import filterSystem from "./components/filterSystem.js";
 import mainSlider from "./components/mainSlider.js";
@@ -13,6 +15,8 @@ const app = {
         mainSlider.init();
         filterSystem.init();
         projectList.init();
+        about.init();
+        contactForm.init();
 
         console.log('App OK')
     }

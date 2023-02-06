@@ -5,6 +5,7 @@
 @import url('./blaze.css');
 
 /* Stylesheets */
+@import url('./about.css');
 @import url('./projects.css');
 @import url('./slider.css');
 
@@ -28,29 +29,32 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .content-wrapper {
-    max-width: 1200px;
-    margin: auto;
-
+    box-sizing: border-box;
     height: 100vh;
+    
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
 .content-wrapper>main {
-    background-color: var(--c1);
-    width: 100%;
+    box-sizing: border-box;
 
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;    
+    padding: 1em;
+    
+    background-color: var(--c1);
 }
 
 section {
-    padding: 1em;
     scroll-snap-align: start;
+    padding-bottom: 1em;
 }
 
-section:first-child {
-    scroll-snap-align: end;
-}
+section:first-child {scroll-snap-align: end;}
+section:last-child {padding-bottom: 0;}
 
 @media (width >= 1024px ) {
     .content-wrapper {
