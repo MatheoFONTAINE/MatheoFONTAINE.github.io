@@ -22,24 +22,28 @@ const projectModal = {
             });
         });
 
-        window.addEventListener('resize', this.defineCSSVariables);
-
         console.log('Project modal OK')
     },
     openModal: function (event) {
         projectModal.createModal(event.currentTarget.dataset.index);
         projectModal.startSlider();
-        projectModal.bindCloseEventListeners();
+        projectModal.bindEventListeners();
         projectModal.defineCSSVariables();
         modalScrollbar.init();
         
         document.querySelector('.project-modal').focus();
     },
     closeModal: function () {
+        window.removeEventListener('resize', this.defineCSSVariables);
+        modalScrollbar.close();
+
         document.querySelector('.modal-wrapper').remove();
     },
-    bindCloseEventListeners: function () {
+    bindEventListeners: function () {
         const modalWrapperElm = document.querySelector('.modal-wrapper');
+
+        // Window resize
+        window.addEventListener('resize', this.defineCSSVariables);
 
         // Close button
         modalWrapperElm.querySelector('.close-button').addEventListener('click', this.closeModal);
