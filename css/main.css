@@ -6,6 +6,7 @@
 
 /* Stylesheets */
 @import url('./about.css');
+@import url('./projectModal.css');
 @import url('./projects.css');
 @import url('./slider.css');
 
@@ -28,6 +29,16 @@ body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+body {
+    height: 100vh;
+}
+
+.main-wrapper {
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+}
+
 main {
     box-sizing: border-box;
 
@@ -43,12 +54,24 @@ section {padding-bottom: 1em;}
 
 section:last-child {padding-bottom: 0;}
 
+.tag {
+    display: inline-block;
+    padding: .2em .4em;
+    background-color: var(--tag-bg);
+    border-radius: 15px;
+    margin: 5px;
+}
+
 @media (width >= 1024px ) {
-    body {
+    .main-wrapper {
         padding: 20px;
     }
     
     main {
         border-radius: 15px;
+    }
+
+    .tag {
+        font-size: 25px;
     }
 }

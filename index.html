@@ -32,60 +32,62 @@
   <title>Portefolio de Mathéo Fontaine</title>
 </head>
 <body>
-  <main>
-    <section id="main-slider" class="blaze-slider">
-      <div class="blaze-container">
-        <div class="blaze-track-container">
-          <div class="blaze-track">
-            <!-- ... -->
+  <div class="main-wrapper">
+    <main>
+      <section id="main-slider" class="blaze-slider">
+        <div class="blaze-container">
+          <div class="blaze-track-container">
+            <div class="blaze-track">
+              <!-- ... -->
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="controls">
-        <button class="blaze-prev">prev</button>
-        <div class="blaze-pagination"></div>
-        <button class="blaze-next">next</button>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="filters">
-        <select id="engine">
-          <option>Moteur</option>
-        </select>
-        <select id="language">
-          <option>Langage</option>
-        </select>
-        <select id="platform">
-          <option>Plateforme</option>
-        </select>
-      </div>
-      <div class="project-list">
-        <!-- ... -->
-      </div>
-    </section>
-
-    <section class="about">
-      <article class="biography">
-        <p><!--  --></p>
-      </article>
-      <div class="vertical-border"></div>
-      <article class="contact-form">
-        <h2>Contact</h2>
-        <form>
-          <input type="hidden" name="contact_number">
-          <input type="text" name="user_name" placeholder="Nom" required>
-          <input type="email" name="user_email" placeholder="Email" required>
-          <textarea name="message" placeholder="Message..." required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </article>
-    </section>
-  </main>
+        
+        <div class="controls">
+          <button class="blaze-prev">prev</button>
+          <div class="blaze-pagination"></div>
+          <button class="blaze-next">next</button>
+        </div>
+      </section>
+  
+      <section id="projects" class="projects">
+        <div class="filters">
+          <select id="engine">
+            <option>Moteur</option>
+          </select>
+          <select id="language">
+            <option>Langage</option>
+          </select>
+          <select id="platform">
+            <option>Plateforme</option>
+          </select>
+        </div>
+        <div class="project-list">
+          <!-- ... -->
+        </div>
+      </section>
+  
+      <section class="about">
+        <article class="biography">
+          <p><!--  --></p>
+        </article>
+        <div class="vertical-border"></div>
+        <article class="contact-form">
+          <h2>Contact</h2>
+          <form>
+            <input type="hidden" name="contact_number">
+            <input type="text" name="user_name" placeholder="Nom" required>
+            <input type="email" name="user_email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message..." required></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </div>
 
   <template id="slider-card-template">
-    <article class="slider-card" tabindex="0">
+    <article class="slider-card" tabindex="0" aria-label="Open project">
       <img src="#" alt="game picture">
       <div class="title-wrapper">
         <h3></h3>
@@ -94,10 +96,65 @@
   </template>
 
   <template id="project-card-template">
-    <article tabindex="0">
+    <article tabindex="0" aria-label="Open project">
       <img src="#" alt="game picture">
       <h3></h3>
     </article>
+  </template>
+
+  <template id="project-modal-template">
+    <div class="modal-wrapper">
+      <article class="project-modal" tabindex="0">
+        <button class="close-button" aria-label="Close project" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3></h3>
+        <div class="picture-slider">
+          <div class="blaze-container">
+            <div class="blaze-track-container">
+              <div class="blaze-track">
+                <!-- ... -->
+                <div class="video-wrapper">
+                  <iframe 
+                    src="https://www.youtube-nocookie.com/embed/" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <button class="blaze-prev">prev</button>
+            <div class="blaze-pagination"></div>
+            <button class="blaze-next">next</button>
+          </div>
+        </div>
+        <p class="tag engine"></p>
+        <p class="tag language"></p>
+        <p class="tag platform"></p>
+        <div class="description-wrapper wrapper">
+          <p>Description : </p>
+        </div>
+        <div class="role-wrapper wrapper">
+          <p>Rôle : </p>
+        </div>
+        <div class="team-wrapper wrapper">
+          <p>Equipe : </p>
+        </div>
+        <div class="link-wrapper wrapper">
+          <p>Lien : <a href="#"></a></p>
+        </div>
+        <div class="date-wrapper wrapper">
+          <p>Date : </p>
+        </div>
+      </article>
+      <div class="scrollbar">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
   </template>
 
   <!-- App -->

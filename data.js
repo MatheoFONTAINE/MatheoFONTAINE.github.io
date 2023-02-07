@@ -43,7 +43,7 @@ const data = {
             "link": "https://gamejolt.com/games/atomania/722178",
             "date": "2022-04",
             "duration": "2 mois",
-            "video": null,
+            "video": "https://www.youtube.com/watch?v=oqUzrEVkR14",
             "isDisplayedInSlider": true
         },
         {
