@@ -8,19 +8,24 @@
  *      "biography": string
  *      "projects": [
  *          "name": string,
-            "description": string,
-            "pictures": [string],
-            "gameEngine": string,
-            "language": string,
-            "platform": string,
-            "role": string,
-            "team": string,
-            "link": string,
-            "date": string,
-            "duration": string,
-            "video": string|null,
-            "isDisplayedInSlider": bool
- *      ]
+ *          "description": string,
+ *          "pictures": [string],
+ *          "gameEngine": string,
+ *          "language": string,
+ *          "platform": string,
+ *          "role": string,
+ *          "team": string,
+ *          "link": string,
+ *          "date": string,
+ *          "duration": string,
+ *          "video": string|null,
+ *          "isDisplayedInSlider": bool
+ *      ],
+ *      "ribbon": {
+ *          "display": bool,
+ *          "text": string|null,
+ *          "link": string|null,
+ *      }
  *  }
  */
 
@@ -123,7 +128,12 @@ const data = {
             "video": null,
             "isDisplayedInSlider": false
         }
-    ]
+    ],
+    "ribbon": {
+        "display": true,
+        "text": "Je suis actuellement en recherche de stage sur Paris",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    }
 };
 
 export default data;
