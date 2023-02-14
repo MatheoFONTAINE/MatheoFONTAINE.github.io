@@ -34,7 +34,7 @@ const projectModal = {
         document.querySelector('.project-modal').focus();
     },
     closeModal: function () {
-        window.removeEventListener('resize', this.defineCSSVariables);
+        window.removeEventListener('resize', projectModal.defineCSSVariables);
         modalScrollbar.close();
 
         document.querySelector('.modal-wrapper').remove();
@@ -43,13 +43,13 @@ const projectModal = {
         const modalWrapperElm = document.querySelector('.modal-wrapper');
 
         // Window resize
-        window.addEventListener('resize', this.defineCSSVariables);
+        window.addEventListener('resize', projectModal.defineCSSVariables);
 
         // Close button
-        modalWrapperElm.querySelector('.close-button').addEventListener('click', this.closeModal);
+        modalWrapperElm.querySelector('.close-button').addEventListener('click', projectModal.closeModal);
         modalWrapperElm.addEventListener('keydown', (event) =>{
             if (event.code !== 'Escape') return;
-            this.closeModal();
+            projectModal.closeModal();
         });
 
         // Clicking outside the modal
