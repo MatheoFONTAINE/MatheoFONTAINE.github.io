@@ -22,6 +22,12 @@ const projectList = {
             
             // Title
             newProject.querySelector('h3').textContent = project.name;
+            newProject.querySelector('h3').title = project.name;
+
+            // Tags
+            newProject.querySelector('.engine').textContent = project.gameEngine;
+            newProject.querySelector('.language').textContent = project.language;
+            newProject.querySelector('.platform').textContent = project.platform;
             
             //? Inserting item
             projectList.appendChild(newProject);

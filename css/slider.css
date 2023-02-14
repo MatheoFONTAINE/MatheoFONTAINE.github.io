@@ -20,12 +20,12 @@
     margin-bottom: -69px; /* 69px corresponds to the height of desktop title */
 }
 
-.title-wrapper {
+.slider-card .title-wrapper {
     position: relative;
     bottom: 1em;
 }
 
-.title-wrapper h3 {
+.slider-card .title-wrapper h3 {
     margin-left: auto;
     padding: .6em 1.1em .4em 1.1em;
     width: fit-content;
