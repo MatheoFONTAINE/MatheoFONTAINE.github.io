@@ -1,0 +1,124 @@
+.filters,
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    font-size: 1.3em;
+}
+
+.filters {
+    border-radius: 8px;
+    padding: .5em .75em;
+    
+    margin-bottom: 15px;
+    
+    background-color: var(--c4);
+}
+
+.filters select {
+    margin: 5px 0;
+    padding: 0.1em 0.2em;
+    border-radius: 15px;
+}
+
+.project-list article {
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.project-list .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+}
+
+.project-list .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-list .image-wrapper h3 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    padding: .6em 1.1em .4em 1.1em;
+    
+    background-color: #3834347e;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-list .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+.project-list .content span {
+    color: #555;
+    font-size: 1.4rem;
+}
+
+@media (width >= 1024px) {
+    .project-list article {
+        position: relative;
+        width: 16rem;
+        height: 16rem;
+        margin: 2rem;
+    }
+
+    .project-list .image-wrapper {
+        height: 100%;
+        position: absolute;    
+        z-index: 2;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .project-list .content {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, var(--c1) 0%, var(--c2) 100%);
+        border: black 2px solid;
+        border-radius: 15px;
+        
+        opacity: 0;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .project-list article:hover .imgBox,
+    .project-list article:focus .imgBox,
+    .project-list article:active .imgBox {
+        transform: translate(-1.5rem, -1.5rem);
+    }
+
+    .project-list article:hover .content,
+    .project-list article:focus .content,
+    .project-list article:active .content {
+        opacity: 1;
+        transform: translate(3.5rem, 3.5rem);
+        z-index: 2;
+    }
+}

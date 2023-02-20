@@ -1,0 +1,36 @@
+aside.ribbon {
+    display: none; /* Only displayed on desktop */
+    
+    position: fixed;
+    z-index: 5;
+    top: 70px;
+    right: -88px;    
+}
+
+.ribbon p,
+.ribbon a {
+    transform: rotate(45deg); /* Rotating parent causes text to be blurry */
+
+    width: 250px;
+    height: 50px;
+    padding: 16px 75px;
+
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #95b;
+    text-decoration: none;
+}
+
+.ribbon a:hover,
+.ribbon a:focus,
+.ribbon a:active {
+    color: lightblue;
+}
+
+
+@media (width >= 1024px ) {
+    aside.ribbon {display: flex;}
+}
