@@ -30,7 +30,7 @@
  */
 
 const data = {
-    "biography": "Je m'appelle Fox et je suis une patate.",
+    "biography": "Je m'appelle Mathéo.",
     "projects": [
         {
             "name": "Atomania",
