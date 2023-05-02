@@ -30,109 +30,30 @@
  */
 
 const data = {
-    "biography": "Je m'appelle Mathéo.",
+    "biography": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI et création d’assets graphiques a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
     "projects": [
         {
-            "name": "Atomania",
-            "description": "Atomania est un runner roguelike sur mobile où tu contrôle un atome qui doit traverser différent monde.  Avec tes armes, avance en te frayant un chemin à travers les obstacles que tu rencontreras. Améliore tes armes pour avancer toujours plus loin !",
+            "name": "Kite Playtime",
+            "description": "Dans ce Shoot them up coloré, affrontez vos ennemies et arrêtez les méfaits du Devil kite.",
             "pictures": [
-                "Atomania_TitleScreen.jpg",
-                "Atomania_Menu.jpg",
-                "Atomania_Gameplay.jpg",
+                "KitePlaytimeUI.png",
             ],
-            "gameEngine": "Unity",
-            "language": "C#",
-            "platform": "Mobile",
-            "role": "Je me suis principalement occupé de toute l'aspect UI, ainsi que le serveur (sauvergarde, chargement des données)",
-            "team": "3 Game Designers & Programmers, 4 Game Designers",
-            "link": "https://gamejolt.com/games/atomania/722178",
-            "date": "2022-04",
-            "duration": "2 mois",
-            "video": "https://www.youtube.com/watch?v=oqUzrEVkR14",
-            "isDisplayedInSlider": true
-        },
-        {
-            "name": "Kill Them All",
-            "description": "Un héros comme les autres parcourt le monde, affronte des ennemis, escalade des montagnes, sans relâche jusqu'à ce qu'il meure dignement.",
-            "pictures": [
-                "KillThemAll_Gameplay1.png",
-                "KillThemAll_TitleCard.png",
-                "KillThemAll_Gameplay2.png",
-                "KillThemAll_Gameplay3.png",
-            ],
-            "gameEngine": "Animate",
-            "language": "Haxe",
-            "platform": "Mobile",
-            "role": "Dans ce projet, je me suis concentré sur la génération procédural des différentes plateforme et ennemis, ainsi que la juiciness du personnage avec ses animations",
-            "team": "Individuel",
-            "link": "https://gamejolt.com/games/kill_them_all/610657",
-            "date": "2021-04",
-            "duration": "1 mois",
-            "video": null,
-            "isDisplayedInSlider": false
-        },
-        {
-            "name": "Sweet Decay",
-            "description": "Bienvenue dans le monde des bonbons ! A bord de votre navire en forme de dent, mangez tous vos ennemis en utilisant la puissance de la téléportation de votre navire.",
-            "pictures": [
-                "SweetDecay_TitleCard.png",
-                "SweetDecay_Gameplay1.png",
-                "SweetDecay_Gameplay2.png",
-                "SweetDecay_Gameplay3.png",
-                "SweetDecay_Win.png",
-                "SweetDecay_GameOver.png",
-            ],
-            "gameEngine": "Animate",
-            "language": "AS3",
-            "platform": "PC",
-            "role": "Dans ce projet, j'ai mis l'accent sur la spécial feature et sur le level design.",
-            "team": "Individuel",
-            "link": "https://gamejolt.com/games/sweet_decay/610610",
-            "date": "2020-11",
-            "duration": "2 mois",
-            "video": null,
-            "isDisplayedInSlider": false
-        },
-        {
-            "name": "Eye Love Rats",
-            "description": "2 rats magiciens cherchent à s'échapper d'un laboratoire magique après que des mages aient expérimenté un sort de battle de regard sur eux. Malgré le fait qu’il ne peuvent pas s'empêcher de se regarder, il vont devoir braver les obstacles en lançant leur laser de l’amitié. ",
-            "pictures": [
-                "EyeLoveRats_TitleCard.png",
-                "EyeLoveRats_Gameplay1.png",
-            ],
-            "gameEngine": "Unity",
+            "gameEngine": "Godot",
             "language": "C#",
             "platform": "PC",
-            "role": "Dans ce projet, je me suis occupé de la feature du laser qui permet de repousser l'autre joueur ou de se connecter si ils entrent en collision.",
-            "team": "2 Game Designers & Programmers, 2 Game Artistes, 1 Sound Designers",
-            "link": "https://gamejolt.com/games/eyeloverats/723382",
-            "date": "2022-06",
-            "duration": "3 jours",
-            "video": null,
+            "role": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
+            "team": "Un Gameplay Programmer & deux Sound Designers",
+            "link": "https://erisa.itch.io/kite-playtime",
+            "date": "2022-12",
+            "duration": "2 mois",
+            "video": "https://www.youtube.com/watch?v=LuU7paZS45Q&t",
             "isDisplayedInSlider": true
         },
-        {
-            "name": "Lost Memories",
-            "description": "C'est l'histoire d'un homme qui a perdu la mémoire. Au travers de ses actions, il va rencontrer les développeurs de ce jeu pour tenter de retrouver la mémoire.",
-            "pictures": [
-                "LostMemories_TitleCard.png",
-            ],
-            "gameEngine": "Ren'py",
-            "language": "Python",
-            "platform": "PC",
-            "role": "Dans ce projet, je me suis occupé d'une partie du texte pour un des personnage et de la transitions entre chaque scène.",
-            "team": "2 Game Designers & Programmers, 1 Game Artistes, 1 Producer, 1 Game Designers",
-            "link": "https://gamejolt.com/games/lost_memories/617270",
-            "date": "2021-05",
-            "duration": "3 jours",
-            "video": null,
-            "isDisplayedInSlider": false
-        }
     ],
     "ribbon": {
-        "display": true,
+        "display": false,
         "text": "Je suis actuellement en recherche de stage sur Paris",
-        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "link": null,
     }
 };
 
