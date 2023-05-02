@@ -103,7 +103,7 @@ const projectModal = {
             modalElm.querySelector('.video-wrapper').remove();
         }
 
-        if (project.pictures.length === 1) {
+        if (project.pictures.length === 1 && null === project.video) {
             modalElm.querySelector('.picture-slider .controls').style.display = 'none';
             modalElm.querySelector('.picture-slider .blaze-track').style.cursor = 'default';
         }
