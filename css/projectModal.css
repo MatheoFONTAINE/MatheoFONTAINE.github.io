@@ -70,14 +70,15 @@
 
 .project-modal .blaze-track>div {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-modal .picture-slider img {
     border-radius: 8px;
-    max-height: 100%;
-    max-width: 100%;
+    margin: auto;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 .project-modal .wrapper {
