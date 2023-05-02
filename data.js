@@ -46,7 +46,7 @@ const data = {
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
             "duration": "2 mois",
-            "video": "https://www.youtube.com/watch?v=LuU7paZS45Q&t",
+            "video": "https://www.youtube.com/watch?v=LuU7paZS45Q",
             "isDisplayedInSlider": true
         },
     ],
