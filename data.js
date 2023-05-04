@@ -46,7 +46,25 @@ const data = {
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
             "duration": "2 mois",
-            "video": "https://www.youtube.com/watch?v=LuU7paZS45Q",
+            "video": "https://youtu.be/LuU7paZS45Q",
+            "isDisplayedInSlider": true
+        },
+        {
+            "name": "Glich Glide",
+            "description": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
+            "pictures": [
+                "GlichGlideUi.png",
+                "GlichGlideOne.png",
+            ],
+            "gameEngine": "Godot",
+            "language": "C#",
+            "platform": "PC",
+            "role": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
+            "team": "Projet Solo",
+            "link": "https://erisa.itch.io/glitch-glide",
+            "date": "2023-04",
+            "duration": "Une semaine",
+            "video": "https://youtu.be/LWBVEh2U1Y0",
             "isDisplayedInSlider": true
         },
     ],
