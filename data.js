@@ -46,7 +46,7 @@ const data = {
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
             "duration": "2 mois",
-            "video": "https://youtu.be/LuU7paZS45Q",
+            "video": "https://www.youtube.com/watch?v=LuU7paZS45Q",
             "isDisplayedInSlider": true
         },
         {
@@ -64,7 +64,7 @@ const data = {
             "link": "https://erisa.itch.io/glitch-glide",
             "date": "2023-04",
             "duration": "Une semaine",
-            "video": "https://youtu.be/LWBVEh2U1Y0",
+            "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
             "isDisplayedInSlider": true
         },
     ],
