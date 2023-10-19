@@ -73,12 +73,13 @@
 }
 
 .project-modal .picture-slider img {
-    border-radius: 8px;
+    object-fit: contain;
     margin: auto;
     height: -webkit-fill-available;
     height: -moz-available;
     width: -webkit-fill-available;
     width: -moz-available;
+    border-radius: 8px;
 }
 
 .project-modal .wrapper {
