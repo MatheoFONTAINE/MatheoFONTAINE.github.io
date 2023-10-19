@@ -72,7 +72,6 @@ const mainSlider = {
         })
     },
     resizeHandler: function () {
-        console.log("hey");
         document.querySelectorAll('.slider-card').forEach(slideElm => {
             slideElm.querySelector('h3').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
         });
