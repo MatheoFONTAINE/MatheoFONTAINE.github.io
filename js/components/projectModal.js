@@ -24,6 +24,7 @@ const projectModal = {
 
         console.log('Project modal OK')
     },
+    blazeSlider: null,
     openModal: function (event) {
         projectModal.createModal(event.currentTarget.dataset.index);
         projectModal.startSlider();
@@ -99,6 +100,17 @@ const projectModal = {
         // Video
         if (null !== project.video) {
             modalElm.querySelector('.video-wrapper iframe').src += /watch\?v=(.+)/.exec(project.video)[1];
+
+            modalElm.querySelector('.video-wrapper iframe').addEventListener('load', () => {
+                let iframeInterval = setInterval(() => {
+                    if (document.activeElement instanceof HTMLIFrameElement) {
+                        projectModal.blazeSlider.stopAutoplay();
+    
+                        clearInterval(iframeInterval);
+                        iframeInterval = null;
+                    }
+                }, 200);
+            })
         } else {
             modalElm.querySelector('.video-wrapper').remove();
         }
@@ -114,7 +126,7 @@ const projectModal = {
     startSlider: function () {
         // @see https://blaze-slider.dev/docs/demos/
         const el = document.querySelector('.picture-slider')
-        new BlazeSlider(el, {
+        projectModal.blazeSlider = new BlazeSlider(el, {
             all: {
                 slidesToShow: 1,
                 loop: true,
