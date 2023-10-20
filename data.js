@@ -53,8 +53,7 @@ const data = {
             "name": "Glich Glide",
             "description": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
             "pictures": [
-                "GlichGlideUi.png",
-                "GlichGlideOne.png",
+                "GlichGlide.gif",
             ],
             "gameEngine": "Godot",
             "language": "C#",
@@ -69,9 +68,9 @@ const data = {
         },
     ],
     "ribbon": {
-        "display": false,
+        "display": true,
         "text": "Je suis actuellement en recherche de stage sur Paris",
-        "link": null,
+        "link": "www.linkedin.com/in/matheo-fontaine",
     }
 };
 
