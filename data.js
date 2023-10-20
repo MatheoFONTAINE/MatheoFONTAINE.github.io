@@ -53,7 +53,7 @@ const data = {
             "name": "Glich Glide",
             "description": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
             "pictures": [
-                "GlitchGlide.gif",
+                "GlichGlide.gif",
             ],
             "gameEngine": "Godot",
             "language": "C#",
