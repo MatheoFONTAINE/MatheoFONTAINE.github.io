@@ -50,10 +50,10 @@ const data = {
             "isDisplayedInSlider": true
         },
         {
-            "name": "Glich Glide",
+            "name": "Glitch Glide",
             "description": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
             "pictures": [
-                "GlichGlide.gif",
+                "GlitchGlide.gif",
             ],
             "gameEngine": "Godot",
             "language": "C#",
@@ -70,7 +70,7 @@ const data = {
     "ribbon": {
         "display": true,
         "text": "Je suis actuellement en recherche de stage sur Paris",
-        "link": "www.linkedin.com/in/matheo-fontaine",
+        "link": "https://www.linkedin.com/in/matheo-fontaine",
     }
 };
 
