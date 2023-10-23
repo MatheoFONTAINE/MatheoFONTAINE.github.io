@@ -3,33 +3,43 @@
  *? data.projects.link should be an URL
  *? data.projects.date must be an string containing the date in YYYY-MM format
  *? data.projects.video must be a string containing a Youtube URL, or null if there is no video to be shown
+ *? data.images allows you to override which picture will be used for engines, languages & platforms
+ *?                     By default, the app will look for a picture with the same name than the engine, language or platform with an .svg extension
+ *?                     If set to null, no image will be used
+ *?                     Pictures must be stored in ./image/icon folder
+ **                         E.g. "Ren'py": "renpy.png"  // Will use renpy.png instead of Ren'py.svg
+ **                              "Blueprint": null,     // Won't use any image
  * 
  * data {
- *      "biography": string
+ *      "biography": string,
  *      "projects": [
  *          "name": string,
  *          "description": string,
  *          "pictures": [string],
  *          "gameEngine": string,
  *          "language": string,
- *          "platform": string,
+ *          "platforms": [string],
  *          "role": string,
  *          "team": string,
  *          "link": string,
  *          "date": string,
  *          "duration": string,
  *          "video": string|null,
- *          "isDisplayedInSlider": bool
+ *          "isDisplayedInSlider": bool,
  *      ],
  *      "ribbon": {
  *          "display": bool,
  *          "text": string|null,
  *          "link": string|null,
- *      }
+ *      },
+ *      "images": (optional) {
+ *          string: string|null
+ *      },
+ *      "display-search-bar": false,
  *  }
  */
 
-const data = {
+ const data = {
     "biography": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI et création d’assets graphiques a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
     "projects": [
         {
@@ -40,7 +50,7 @@ const data = {
             ],
             "gameEngine": "Godot",
             "language": "C#",
-            "platform": "PC",
+            "platforms": ["PC"],
             "role": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
             "team": "Un Gameplay Programmer & deux Sound Designers",
             "link": "https://erisa.itch.io/kite-playtime",
@@ -57,7 +67,7 @@ const data = {
             ],
             "gameEngine": "Godot",
             "language": "C#",
-            "platform": "PC",
+            "platforms": ["PC"],
             "role": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
             "team": "Projet Solo",
             "link": "https://erisa.itch.io/glitch-glide",
@@ -71,7 +81,11 @@ const data = {
         "display": true,
         "text": "Je suis actuellement en recherche de stage sur Paris",
         "link": "https://www.linkedin.com/in/matheo-fontaine",
-    }
+    },
+    "images": {
+        "C#": "Csharp.svg",
+    },
+    "display-search-bar": false,
 };
 
 export default data;

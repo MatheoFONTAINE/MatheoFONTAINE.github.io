@@ -24,19 +24,55 @@ const projectList = {
             newProject.querySelector('h3').textContent = project.name;
             newProject.querySelector('h3').title = project.name;
 
-            // Tags
+            // Engine
             newProject.querySelector('.engine').textContent = project.gameEngine;
+            if (data.images[project.gameEngine] === undefined || data.images[project.gameEngine] !== null) {
+                const imgElm = document.createElement('img');
+
+                imgElm.src = './image/icon/' + (data.images[project.gameEngine] === undefined ? project.gameEngine+'.svg' : data.images[project.gameEngine]);
+                imgElm.alt = `${project.gameEngine} icon`
+                imgElm.title = project.gameEngine;
+
+                newProject.querySelector('.engine').prepend(imgElm);
+            }
+
+            // Language
             newProject.querySelector('.language').textContent = project.language;
-            newProject.querySelector('.platform').textContent = project.platform;
+            if (data.images[project.language] === undefined || data.images[project.language] !== null) {
+                const imgElm = document.createElement('img');
+
+                imgElm.src = './image/icon/' + (data.images[project.language] === undefined ? project.language+'.svg' : data.images[project.language]);
+                imgElm.alt = `${project.language} icon`
+                imgElm.title = project.language;
+
+                newProject.querySelector('.language').prepend(imgElm);
+            }
+
+            // Platforms
+            project.platforms.forEach(platform => {
+                const pElm = document.createElement('p');
+                const imgElm = document.createElement('img');
+
+                pElm.textContent = platform;
+                pElm.classList.add('tag', 'platform')
+
+                imgElm.src = './image/icon/' + (data.images[platform] === undefined ? platform+'.svg' : data.images[platform]);
+                imgElm.alt = `${platform} icon`
+                imgElm.title = platform;
+
+                pElm.prepend(imgElm);
+                
+                newProject.querySelector('.language').after(pElm);
+            });
             
             //? Inserting item
             projectList.appendChild(newProject);
             
             // Dataset
             projectList.querySelector('article:last-child').dataset.index = index;
-            projectList.querySelector('article:last-child').dataset.engine = project.gameEngine;
-            projectList.querySelector('article:last-child').dataset.language = project.language;
-            projectList.querySelector('article:last-child').dataset.platform = project.platform;
+            projectList.querySelector('article:last-child').dataset.engine = project.gameEngine.toLowerCase().replaceAll(' ', '-').replaceAll(/[^a-z]/g, '');
+            projectList.querySelector('article:last-child').dataset.language = project.language.toLowerCase().replaceAll(' ', '-').replaceAll(/[^a-z]/g, '');
+            projectList.querySelector('article:last-child').dataset.platforms = project.platforms.map(platform => platform.toLowerCase().replaceAll(' ', '-').replaceAll(/[^a-z]/g, ''));
         });
     }
 }
