@@ -71,7 +71,7 @@ section:last-child {padding-bottom: 0;}
 }
 
 .tag {
-    display: flex;
+    display: inline-flex;
     padding: .3em;
     background-color: var(--tag-bg);
     border-radius: 15px;
@@ -79,10 +79,6 @@ section:last-child {padding-bottom: 0;}
     font-size: 25px;
 }
 
-#main-slider .tag,
-.modal-wrapper .tag {display: inline-flex;}
-
-#main-slider .tag img,
 .modal-wrapper .tag img {
     margin-right: .1em;
 }
