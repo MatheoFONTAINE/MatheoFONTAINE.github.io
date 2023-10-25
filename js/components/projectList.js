@@ -77,6 +77,7 @@ const projectList = {
     refreshLanguage: function () {
         document.querySelectorAll('.project-list article').forEach(articleElm => {
             articleElm.setAttribute('aria-label', document.querySelector('html').getAttribute('lang') === 'fr' ? 'Ouvrir le projet' : 'Open project');
+            articleElm.setAttribute('title',      document.querySelector('html').getAttribute('lang') === 'fr' ? 'Ouvrir le projet' : 'Open project');
         });
     },
 }
