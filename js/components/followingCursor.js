@@ -142,6 +142,23 @@ const followingCursor = {
         document.querySelector('.hide-following-cursor.show').classList.add('hidden');
         document.querySelector('.hide-following-cursor.hide').classList.remove('hidden');
     },
+    refreshLanguage: function () {
+        if (document.querySelector('html').getAttribute('lang') === 'en') {
+            document.querySelector('.hide-following-cursor.hide').setAttribute('aria-label', 'Hide following cursor');
+            document.querySelector('.hide-following-cursor.hide').setAttribute('title', 'Hide following cursor');
+            document.querySelector('.hide-following-cursor.hide img').setAttribute('alt', 'Image of a crossed fox');
+            document.querySelector('.hide-following-cursor.show').setAttribute('aria-label', 'Show following cursor');
+            document.querySelector('.hide-following-cursor.show').setAttribute('title', 'Show following cursor');
+            document.querySelector('.hide-following-cursor.show img').setAttribute('alt', 'Image of a fox');
+        } else {
+            document.querySelector('.hide-following-cursor.hide').setAttribute('aria-label', 'Cacher le curseur animé');
+            document.querySelector('.hide-following-cursor.hide').setAttribute('title', 'Cacher le curseur animé');
+            document.querySelector('.hide-following-cursor.hide img').setAttribute('alt', 'Renard barré');
+            document.querySelector('.hide-following-cursor.show').setAttribute('aria-label', 'Afficher le curseur animé');
+            document.querySelector('.hide-following-cursor.show').setAttribute('title', 'Afficher le curseur animé');
+            document.querySelector('.hide-following-cursor.show img').setAttribute('alt', 'Renard');
+        }
+    },
 }
 
 export default followingCursor;

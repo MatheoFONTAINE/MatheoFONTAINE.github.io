@@ -8,22 +8,28 @@ const ribbon = {
     },
     createRibbon: function () {
         const asideElm = document.createElement('aside');
-        let textElm;
         asideElm.classList.add('ribbon');
-        
+
+        let frenchTextElm, englishTextElm;
         if (null === data.ribbon.link) {
-            textElm = document.createElement('p');
+            frenchTextElm = document.createElement('p');
+            englishTextElm = document.createElement('p');
         } else {
-            textElm = document.createElement('a');
+            frenchTextElm = document.createElement('a');
+            englishTextElm = document.createElement('a');
             
-            textElm.href = data.ribbon.link;
+            frenchTextElm.href = data.ribbon.link;
+            frenchTextElm.setAttribute('lang', 'fr');
+            englishTextElm.href = data.ribbon.link;
+            englishTextElm.setAttribute('lang', 'en')
         }
 
-        textElm.textContent = data.ribbon.text;
+        frenchTextElm.textContent = data.ribbon.text.fr;
+        englishTextElm.textContent = data.ribbon.text.en;
         
-        asideElm.appendChild(textElm);
+        asideElm.append(frenchTextElm, englishTextElm);
         document.querySelector('main').prepend(asideElm);
-    }
+    },
 }
 
 export default ribbon;

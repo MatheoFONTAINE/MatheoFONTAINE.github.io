@@ -147,7 +147,10 @@ const filterSystem = {
         filterSystem.refreshResetButtonDisplay();
 
         document.querySelectorAll('.project-list article').forEach(project => {
-            project.style.display = project.querySelector('h3').textContent.toLowerCase().includes(searchedValue) || searchedValue === '' ? 'block' : 'none';
+            project.style.display = 
+                project.querySelector('h3[lang=fr]').textContent.toLowerCase().includes(searchedValue) 
+                || project.querySelector('h3[lang=en]').textContent.toLowerCase().includes(searchedValue)
+                || searchedValue === '' ? 'block' : 'none';
         });
     },
     handleSelection: function (event) {
@@ -200,6 +203,21 @@ const filterSystem = {
         // Trigger change event to update project list
         document.querySelector('input#search').dispatchEvent(new Event('change'));
         document.querySelector('input[name=engine]').dispatchEvent(new Event('change'));
+    },
+    refreshLanguage: function () {
+        if (document.querySelector('html').getAttribute('lang') === 'en') {
+            document.querySelector('input#search').setAttribute('placeholder', 'Search...');
+            document.querySelector('.filters.engine   h3').textContent = 'Game engine';
+            document.querySelector('.filters.language h3').textContent = 'Language';
+            document.querySelector('.filters.platform h3').textContent = 'Platform';
+            document.querySelector('.filter-system [type=reset]').textContent = 'Reset';
+        } else {
+            document.querySelector('input#search').setAttribute('placeholder', 'Recherche...');
+            document.querySelector('.filters.engine   h3').textContent = 'Moteur de jeu';
+            document.querySelector('.filters.language h3').textContent = 'Langage';
+            document.querySelector('.filters.platform h3').textContent = 'Plateforme';
+            document.querySelector('.filter-system [type=reset]').textContent = 'Réinitialiser';
+        }
     },
 }
 

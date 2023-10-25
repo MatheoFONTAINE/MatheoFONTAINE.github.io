@@ -7,8 +7,9 @@ const about = {
         console.log('About OK')
     },
     fillBiography: function () {
-        document.querySelector('.biography p').textContent = data.biography;
-    }
+        document.querySelector('.biography p[lang=fr]').textContent = data.biography.fr;
+        document.querySelector('.biography p[lang=en]').textContent = data.biography.en;
+    },
 }
 
 export default about;

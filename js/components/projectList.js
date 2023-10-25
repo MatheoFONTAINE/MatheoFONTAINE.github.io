@@ -19,10 +19,9 @@ const projectList = {
             // Picture
             newProject.querySelector('img').src = 'image/' + project.pictures[0];
 
-            
             // Title
-            newProject.querySelector('h3').textContent = project.name;
-            newProject.querySelector('h3').title = project.name;
+            newProject.querySelector('h3[lang=fr]').textContent = project.name.fr ?? project.name;
+            newProject.querySelector('h3[lang=en]').textContent = project.name.en ?? project.name;
 
             // Engine
             newProject.querySelector('.engine').textContent = project.gameEngine;
@@ -74,7 +73,12 @@ const projectList = {
             projectList.querySelector('article:last-child').dataset.language = project.language.toLowerCase().replaceAll(' ', '-').replaceAll(/[^a-z]/g, '');
             projectList.querySelector('article:last-child').dataset.platforms = project.platforms.map(platform => platform.toLowerCase().replaceAll(' ', '-').replaceAll(/[^a-z]/g, ''));
         });
-    }
+    },
+    refreshLanguage: function () {
+        document.querySelectorAll('.project-list article').forEach(articleElm => {
+            articleElm.setAttribute('aria-label', document.querySelector('html').getAttribute('lang') === 'fr' ? 'Ouvrir le projet' : 'Open project');
+        });
+    },
 }
 
 export default projectList;

@@ -74,18 +74,27 @@ const projectModal = {
     
         //? Filling new node
         // Common elements
-        modalElm.querySelector('h3')                    .textContent = project.name;
-        modalElm.querySelector('.engine')               .textContent = project.gameEngine;
-        modalElm.querySelector('.language')             .textContent = project.language;
-        modalElm.querySelector('.description-wrapper p').innerHTML  += project.description;
-        modalElm.querySelector('.role-wrapper p')       .innerHTML  += project.role;
-        modalElm.querySelector('.team-wrapper p')       .innerHTML  += project.team;
-        modalElm.querySelector('.link-wrapper a')       .textContent += project.link;
-        modalElm.querySelector('.link-wrapper a')       .href        = project.link;
+        modalElm.querySelector('h3[lang=fr]')                    .textContent = project.name.fr ?? project.name;
+        modalElm.querySelector('h3[lang=en]')                    .textContent = project.name.en ?? project.name;
+        modalElm.querySelector('.engine')                        .textContent = project.gameEngine;
+        modalElm.querySelector('.language')                      .textContent = project.language;
+        modalElm.querySelector('.description-wrapper p[lang=fr]').textContent += project.description.fr;
+        modalElm.querySelector('.description-wrapper p[lang=en]').textContent += project.description.en;
+        modalElm.querySelector('.role-wrapper p[lang=fr]')       .textContent += project.role.fr;
+        modalElm.querySelector('.role-wrapper p[lang=en]')       .textContent += project.role.en;
+        modalElm.querySelector('.team-wrapper p[lang=fr]')       .textContent += project.team.fr ?? project.team;
+        modalElm.querySelector('.team-wrapper p[lang=en]')       .textContent += project.team.en ?? project.team;
+        modalElm.querySelector('.link-wrapper p[lang=fr] a')     .textContent += project.link;
+        modalElm.querySelector('.link-wrapper p[lang=fr] a')     .href        = project.link;
+        modalElm.querySelector('.link-wrapper p[lang=en] a')     .textContent += project.link;
+        modalElm.querySelector('.link-wrapper p[lang=en] a')     .href        = project.link;
         const dateArray = project.date.split('-'); // Dates are stored as YYYY-MM format
-        modalElm.querySelector('.date-wrapper p time')  .textContent += `${dateArray[1]}/${dateArray[0]}`;
-        modalElm.querySelector('.date-wrapper p time')  .setAttribute('datetime', project.date);
-        modalElm.querySelector('.date-wrapper p')       .innerHTML   += `${project.duration}`; // Using innerHTML since <p> element contains a <time> element
+        modalElm.querySelector('.date-wrapper p[lang=fr] time')  .textContent += `${dateArray[1]}/${dateArray[0]}`;
+        modalElm.querySelector('.date-wrapper p[lang=fr] time')  .setAttribute('datetime', project.date);
+        modalElm.querySelector('.date-wrapper p[lang=fr]')       .innerHTML   += `${project.duration.fr}`; // Using innerHTML since <p> element contains a <time> element
+        modalElm.querySelector('.date-wrapper p[lang=en] time')  .textContent += `${dateArray[1]}/${dateArray[0]}`;
+        modalElm.querySelector('.date-wrapper p[lang=en] time')  .setAttribute('datetime', project.date);
+        modalElm.querySelector('.date-wrapper p[lang=en]')       .innerHTML   += `${project.duration.en}`; // Using innerHTML since <p> element contains a <time> element
 
         // Engine picture
         if (data.images[project.gameEngine] === undefined || data.images[project.gameEngine] !== null) {
@@ -126,7 +135,7 @@ const projectModal = {
             const newSlide = document.createElement('div');
             const newImg = document.createElement('img');
             newImg.src = 'image/' + picture;
-            newImg.alt = 'Game picture';
+            newImg.alt = document.querySelector('html').getAttribute('lang') === 'fr' ? 'Image du jeu' : 'Game picture';
 
             newSlide.appendChild(newImg);
             sliderElm.appendChild(newSlide);
@@ -181,7 +190,21 @@ const projectModal = {
                 transitionTimingFunction: 'ease',
             },
         })
-    }
+    },
+    refreshLanguage: function () {
+        if (document.querySelector('.modal-wrapper') === null) return;
+
+        document.querySelectorAll('.modal-wrapper .blaze-track img').forEach(imgElm => {
+            imgElm.alt = document.querySelector('html').getAttribute('lang') === 'fr' ? 'Image du jeu' : 'Game picture';
+        });
+        if (document.querySelector('html').getAttribute('lang') === 'en') {
+            document.querySelector('.modal-wrapper .close-button').setAttribute('aria-label', 'Close');
+            document.querySelector('.modal-wrapper .close-button').setAttribute('title', 'Close');
+        } else {
+            document.querySelector('.modal-wrapper .close-button').setAttribute('aria-label', 'Fermer');
+            document.querySelector('.modal-wrapper .close-button').setAttribute('title', 'Fermer');
+        }
+    },
 }
 
 export default projectModal;

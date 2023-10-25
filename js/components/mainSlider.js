@@ -26,7 +26,8 @@ const mainSlider = {
                 newSlide.querySelector('img').src = 'image/' + project.pictures[0];
     
                 // Title
-                newSlide.querySelector('h3').textContent = project.name;
+                newSlide.querySelector('h3[lang=fr]').textContent = project.name.fr ?? project.name;
+                newSlide.querySelector('h3[lang=en]').textContent = project.name.en ?? project.name;
                 
                 //? Inserting item
                 slider.appendChild(newSlide);
@@ -37,7 +38,8 @@ const mainSlider = {
                 newSlideElm.dataset.index = index;
 
                 // Title position
-                newSlideElm.querySelector('img').addEventListener('load', () => {newSlideElm.querySelector('h3').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('img').width)/2 + 'px';});
+                newSlideElm.querySelector('img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=fr]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('img').width)/2 + 'px';});
+                newSlideElm.querySelector('img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=en]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('img').width)/2 + 'px';});
 
                 slidesCounter++;
             }
@@ -73,10 +75,16 @@ const mainSlider = {
     },
     resizeHandler: function () {
         document.querySelectorAll('.slider-card').forEach(slideElm => {
-            slideElm.querySelector('h3').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
+            slideElm.querySelector('h3[lang=fr]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
+            slideElm.querySelector('h3[lang=en]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
         });
         
-    }
+    },
+    refreshLanguage: function () {
+        document.querySelectorAll('.slider-card').forEach(slideElm => {
+            slideElm.setAttribute('aria-label', document.querySelector('html').getAttribute('lang') === 'fr' ? 'Ouvrir le projet' : 'Open project');
+        });
+    },
 }
 
 export default mainSlider;

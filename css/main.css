@@ -33,6 +33,9 @@ body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+html[lang=fr] [lang=en] {display: none;}
+html[lang=en] [lang=fr] {display: none;}
+
 body {
     height: 100vh;
     background: var(--c2) url(../image/bg1.png) center center/cover no-repeat;
@@ -88,6 +91,57 @@ section:last-child {padding-bottom: 0;}
     display: block;
     width: 30px;
     height: 30px;
+}
+
+button#change-language {
+    all: unset;
+
+    box-sizing: content-box;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 25px;
+    right: 160px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    z-index: 15;
+}
+
+button#change-language:focus-visible {outline: -webkit-focus-ring-color auto 1px;}
+
+button#change-language img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    transition: all .25s linear;
+}
+
+button#change-language.french img:last-child {
+    top: 50px;
+    left: 50px;
+}
+
+button#change-language.english img:last-child {
+    top: 0;
+    left: 0;
+}
+
+button#change-language.to-english img:last-child,
+button#change-language.to-english img:last-child {
+    top: 0;
+    left: 0;
+}
+
+button#change-language.to-french img:last-child,
+button#change-language.to-french img:last-child {
+    top: 50px;
+    left: 50px;
 }
 
 button.up {
