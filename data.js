@@ -13,24 +13,24 @@
  * 
  * data {
  *      "biography": {
- *         "fr": string,
+ *          "fr": string,
  *          "en": string,
  *      },
  *      "projects": [
  *          {
  *              "name": string,
  ** OR          "name": {
-     **                 "fr": string,
-     **                 "en": string,
-     **             },
-     *              "description": {
-     *                  "fr": string,
-     *                  "en": string,
-     *              },
-     *              "pictures": [string],
-     *              "gameEngine": string,
-     *              "language": string,
-     *              "platforms": [string],
+ **                 "fr": string,
+ **                 "en": string,
+ **             },
+ *              "description": {
+ *                  "fr": string,
+ *                  "en": string,
+ *              },
+ *              "pictures": [string],
+ *              "gameEngine": string,
+ *              "language": string,
+ *              "platforms": [string],
  *              "role": {
  *                  "fr": string,
  *                  "en": string,
