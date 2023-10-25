@@ -83,7 +83,9 @@ const projectModal = {
         modalElm.querySelector('.link-wrapper a')       .textContent += project.link;
         modalElm.querySelector('.link-wrapper a')       .href        = project.link;
         const dateArray = project.date.split('-'); // Dates are stored as YYYY-MM format
-        modalElm.querySelector('.date-wrapper p')       .textContent += `${dateArray[1]}/${dateArray[0]} - ${project.duration}`;
+        modalElm.querySelector('.date-wrapper p time')  .textContent += `${dateArray[1]}/${dateArray[0]}`;
+        modalElm.querySelector('.date-wrapper p time')  .setAttribute('datetime', project.date);
+        modalElm.querySelector('.date-wrapper p')       .innerHTML   += `${project.duration}`; // Using innerHTML since <p> element contains a <time> element
 
         // Engine picture
         if (data.images[project.gameEngine] === undefined || data.images[project.gameEngine] !== null) {
