@@ -67,15 +67,15 @@
 
  const data = {
     "biography": {
-        "fr": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI et création d’assets graphiques et level desing a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
-         "en": "My name is Mathéo FONTAINE, im a student in Game Design & Programming. Welcome to my portfolio, being versatile, I put my experience in gameplay programming, UI and the creation of graphic assets and level design to good use in my projects. I will be pleased to put my skills to practice to discover new things  ",
+        "fr": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI, création d’assets graphiques et level desing a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
+         "en": "My name is Mathéo FONTAINE, im a student in Game Design & Programming. Welcome to my portfolio, being versatile, I put my experience in gameplay programming, UI, creation of graphic assets and level design to good use in my projects. I will be pleased to put my skills to practice to discover new things  ",
     },
     "projects": [
         {
             "name": "Kite Playtime",
             "description": {
-                "fr": "Dans ce Shoot them up coloré, terrasser vos ennemies et arrêtez les méfaits du Devil kite.",
-                "en": "In this complete Collor, shoot them up, fight your enemies and stop the meffait of the diabolical kite. ",
+                "fr": "Dans ce Shoot them up coloré, terrasser vos ennemies et arrêtez les méfaits du Devil Kite.",
+                "en": "In this Colorfull, shoot them up, fight your enemies and stop the meffait of the Devil Kite. ",
             },
             "pictures": [
                 "KitePlaytime_00.png",
@@ -90,7 +90,7 @@
             },
             "team": {
                 "fr": "Un Gameplay Programmer & deux Sound Designers",
-                "en": "One Gampalay Programmr & two Sound Designers",
+                "en": "One Gampalay Programmer & two Sound Designers",
             },
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
@@ -105,7 +105,7 @@
             "name": "Glitch Glide",
             "description": {
                 "fr": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
-                "en": "",
+                "en": "Take on your friends and family in this crazy racing game",
             },
             "pictures": [
                 "GlitchGlide.gif",
@@ -119,7 +119,7 @@
             },
             "team": {
                 "fr": "Projet Solo",
-                "en": "Single project",
+                "en": "I was single on this project",
             },
             "link": "https://erisa.itch.io/glitch-glide",
             "date": "2023-04",
