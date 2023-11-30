@@ -67,35 +67,36 @@
 
  const data = {
     "biography": {
-        "fr": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI et création d’assets graphiques a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
-        "en": "",
+        "fr": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI et création d’assets graphiques et level desing a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
+         "en": "My name is Mathéo FONTAINE, im a student in Game Design & Programming. Welcome to my portfolio, being versatile, I put my experience in gameplay programming, UI and the creation of graphic assets and level design to good use in my projects. I will be pleased to put my skills to practice to discover new things  ",
     },
     "projects": [
         {
             "name": "Kite Playtime",
             "description": {
-                "fr": "Dans ce Shoot them up coloré, affrontez vos ennemies et arrêtez les méfaits du Devil kite.",
-                "en": "",
+                "fr": "Dans ce Shoot them up coloré, terrasser vos ennemies et arrêtez les méfaits du Devil kite.",
+                "en": "In this complete Collor, shoot them up, fight your enemies and stop the meffait of the diabolical kite. ",
             },
             "pictures": [
-                "KitePlaytimeUI.png",
+                "KitePlaytime_00.png",
+                "KitePlaytime_01.png",
             ],
             "gameEngine": "Godot",
             "language": "C#",
             "platforms": ["PC"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
-                "en": "",
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet, je trouve que la capacité spéciale est très bien intégrer dans le Level Design et le pattern des ennemies",
+                "en": "I worked on the whole project exept the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
             },
             "team": {
                 "fr": "Un Gameplay Programmer & deux Sound Designers",
-                "en": "",
+                "en": "One Gampalay Programmr & two Sound Designers",
             },
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
             "duration": {
                 "fr": "2 mois",
-                "en": "",
+                "en": "2 month",
             },
             "video": "https://www.youtube.com/watch?v=LuU7paZS45Q",
             "isDisplayedInSlider": true
@@ -113,18 +114,18 @@
             "language": "C#",
             "platforms": ["PC"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores.",
-                "en": "",
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet j'ai passer du temps sur le post processing et l'environement pour donner un resultat minimaliste mais cohérant et beau",
+                "en": "I worked on the whole project exept the creation of sound asset. On this project. On this project i spend time on post processing to make a minimalist but coherent and beautiful result",
             },
             "team": {
                 "fr": "Projet Solo",
-                "en": "",
+                "en": "Single project",
             },
             "link": "https://erisa.itch.io/glitch-glide",
             "date": "2023-04",
             "duration": {
                 "fr": "Une semaine",
-                "en": "",
+                "en": "One Week",
             },
             "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
             "isDisplayedInSlider": true
@@ -133,8 +134,8 @@
     "ribbon": {
         "display": true,
         "text": {
-            "fr": "Je suis actuellement en recherche de stage sur Paris",
-            "en": "",
+            "fr": "Je suis actuellement en recherche de stage !",
+            "en": "Searching for a stage !",
         },
         "link": "https://www.linkedin.com/in/matheo-fontaine",
     },
