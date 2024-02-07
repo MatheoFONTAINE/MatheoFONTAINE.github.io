@@ -90,7 +90,7 @@
             },
             "team": {
                 "fr": "Un Gameplay Programmer & deux Sound Designers",
-                "en": "One Gampalay Programmer & two Sound Designers",
+                "en": "One Gameplay Programmer & two Sound Designers",
             },
             "link": "https://erisa.itch.io/kite-playtime",
             "date": "2022-12",
