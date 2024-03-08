@@ -133,8 +133,8 @@
         {
             "name": "Undead Conundrum",
             "description": {
-                "fr": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
-                "en": "Take on your friends and family in this crazy racing game",
+                "fr": "Aider les mort vivant a retrouver leur chemins vers leur tombe dans ce casse tete inspirer du jeu RUSH",
+                "en": "Help the undead to find their path to ther graves int this brainteaser inspired by the game RUSH",
             },
             "pictures": [
                 "rushTitleCard.gif",
@@ -143,18 +143,18 @@
             "language": "C#",
             "platforms": ["PC","Mobile"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet j'ai passer du temps sur le post processing et l'environement pour donner un resultat minimaliste mais cohérant et beau",
-                "en": "I worked on the whole project exept the creation of sound asset. On this project. On this project i spend time on post processing to make a minimalist but coherent and beautiful result",
+                "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet etait principalement un travail d'observation, le but etait de reproduire le plus fidélement le jeu RUSH developer par Two Tribes",
+                "en": "I worked on the entire project. This project was mainly a work of observation, the goal was to reproduce as faithfully as possible the game RUSH developed by Two Tribes",
             },
             "team": {
                 "fr": "Projet Solo",
                 "en": "I was single on this project",
             },
-            "link": "https://erisa.itch.io/glitch-glide",
-            "date": "2023-04",
+            "link": "https://erisa.itch.io/undead-conundrum",
+            "date": "2023-11",
             "duration": {
-                "fr": "Une semaine",
-                "en": "One Week",
+                "fr": "Deux mois",
+                "en": "Two month",
             },
             "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
             "isDisplayedInSlider": true
