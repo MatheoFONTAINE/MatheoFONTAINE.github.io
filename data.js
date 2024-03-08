@@ -130,6 +130,35 @@
             "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
             "isDisplayedInSlider": true
         },
+        {
+            "name": "Undead Conundrum",
+            "description": {
+                "fr": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
+                "en": "Take on your friends and family in this crazy racing game",
+            },
+            "pictures": [
+                "rushTitleCard.gif",
+            ],
+            "gameEngine": "Unity",
+            "language": "C#",
+            "platforms": ["PC","Mobile"],
+            "role": {
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet j'ai passer du temps sur le post processing et l'environement pour donner un resultat minimaliste mais cohérant et beau",
+                "en": "I worked on the whole project exept the creation of sound asset. On this project. On this project i spend time on post processing to make a minimalist but coherent and beautiful result",
+            },
+            "team": {
+                "fr": "Projet Solo",
+                "en": "I was single on this project",
+            },
+            "link": "https://erisa.itch.io/glitch-glide",
+            "date": "2023-04",
+            "duration": {
+                "fr": "Une semaine",
+                "en": "One Week",
+            },
+            "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
+            "isDisplayedInSlider": true
+        },
     ],
     "ribbon": {
         "display": true,
