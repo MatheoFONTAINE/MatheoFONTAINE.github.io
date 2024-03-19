@@ -156,7 +156,7 @@
                 "fr": "Deux mois",
                 "en": "Two month",
             },
-            "video": "https://www.youtube.com/watch?v=LWBVEh2U1Y0",
+            "video": "",
             "isDisplayedInSlider": true
         },
     ],
