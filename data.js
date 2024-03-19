@@ -156,7 +156,7 @@
                 "fr": "Deux mois",
                 "en": "Two month",
             },
-            "video": "",
+            "video": null,
             "isDisplayedInSlider": true
         },
     ],
