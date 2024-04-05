@@ -161,7 +161,7 @@
         },
     ],
     "ribbon": {
-        "display": true,
+        "display": false,
         "text": {
             "fr": "Je suis actuellement en recherche de stage !",
             "en": "Searching for a stage !",
