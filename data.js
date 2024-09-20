@@ -172,15 +172,14 @@
                 "Unseen_Shoot_1.png",
                 "Unseen_Shoot_2.png",
                 "Unseen_Shoot_3.png",
-                "Unseen_Shoot_4.png",
 
             ],
             "gameEngine": "Unity",
             "language": "C#",
             "platforms": ["PC","Mobile"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet, je trouve que la capacité spéciale est très bien intégrer dans le Level Design et le pattern des ennemies",
-                "en": "I worked on the whole project exept the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
+                "fr": "Developement et integration de l'UI,Integration des Animation du joueur,Integration sonore avec Fmod,Level Desing, Developpement des differente platforme",
+                "en": "",
             },
             "team": {
                 "fr": "Une equipe de 15 personne : 8 Game Artist, 5 Gameplay Programmer & Designer et 3 Music & Sound Designer",
