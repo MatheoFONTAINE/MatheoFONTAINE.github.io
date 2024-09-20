@@ -183,8 +183,8 @@
                 "en": "I worked on the whole project exept the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
             },
             "team": {
-                "fr": "Une equipe de 15 personne, Dont 8 Game Artist, 5 Gameplay Programmer & Designer et 3 Music & Sound designer",
-                "en": "One Gameplay Programmer & two Sound Designers",
+                "fr": "Une equipe de 15 personne : 8 Game Artist, 5 Gameplay Programmer & Designer et 3 Music & Sound Designer",
+                "en": "We were a team of 15 people : 8 Game Artist, 5 Gameplay Programmer & Designer and 3 Music & Sound Designer",
             },
             "link": "https://erisa.itch.io/unseen",
             "date": "2024-2",
