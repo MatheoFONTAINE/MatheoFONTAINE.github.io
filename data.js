@@ -75,7 +75,7 @@
             "name": "Kite Playtime",
             "description": {
                 "fr": "Dans ce Shoot them up coloré, terrasser vos ennemies et arrêtez les méfaits du Devil Kite.",
-                "en": "In this Colorfull, shoot them up, fight your enemies and stop the meffait of the Devil Kite. ",
+                "en": "In this Colorfull, shoot them up, fight your enemies and stop the meffait of the Devil Kite.",
             },
             "pictures": [
                 "KitePlaytime_00.png",
@@ -159,9 +159,45 @@
             "video": null,
             "isDisplayedInSlider": true
         },
+        {
+            "name": "UnSeen",
+            "description": {
+                "fr": "",
+                "en": "",
+            },
+            "pictures": [
+                "Unseen_Logo.png",
+                "Unseen_UI_1.png",
+                "Unseen_UI_2.png",
+                "Unseen_Shoot_1.png",
+                "Unseen_Shoot_2.png",
+                "Unseen_Shoot_3.png",
+                "Unseen_Shoot_4.png",
+
+            ],
+            "gameEngine": "Unity",
+            "language": "C#",
+            "platforms": ["PC","Mobile"],
+            "role": {
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet, je trouve que la capacité spéciale est très bien intégrer dans le Level Design et le pattern des ennemies",
+                "en": "I worked on the whole project exept the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
+            },
+            "team": {
+                "fr": "Une equipe de 15 personne, Dont 8 Game Artist, 5 Gameplay Programmer & Designer et 3 Music & Sound designer",
+                "en": "One Gameplay Programmer & two Sound Designers",
+            },
+            "link": "https://erisa.itch.io/unseen",
+            "date": "2024-2",
+            "duration": {
+                "fr": "3 mois",
+                "en": "3 month",
+            },
+            "video": "https://www.youtube.com/watch?v=iWzvDz5wPx4",
+            "isDisplayedInSlider": true
+        },
     ],
     "ribbon": {
-        "display": false,
+        "display": true,
         "text": {
             "fr": "Je suis actuellement en recherche de stage !",
             "en": "Searching for a stage !",
