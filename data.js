@@ -74,8 +74,8 @@
         {
             "name": "Kite Playtime",
             "description": {
-                "fr": "Dans ce Shoot them up coloré, terrasser vos ennemies et arrêtez les méfaits du Devil Kite.",
-                "en": "In this Colorfull, shoot them up, fight your enemies and stop the meffait of the Devil Kite.",
+                "fr": "Dans ce Shoot them up coloré, terrassez vos ennemis et arrêtez les méfaits du Devil Kite.",
+                "en": "In this colorful, shoot them up, fight your enemies and stop the meffait of the Devil Kite.",
             },
             "pictures": [
                 "KitePlaytime_00.png",
@@ -85,8 +85,8 @@
             "language": "C#",
             "platforms": ["PC"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet, je trouve que la capacité spéciale est très bien intégrer dans le Level Design et le pattern des ennemies",
-                "en": "I worked on the whole project exept the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet, je trouve que la capacité spéciale est très bien intégrée dans le Level Design et le pattern des ennemis",
+                "en": "I worked on the whole project except the creation of sound asset. On this project, I think the special ability is very well integrated into the level design and the enemy pattern.",
             },
             "team": {
                 "fr": "Un Gameplay Programmer & deux Sound Designers",
@@ -104,7 +104,7 @@
         {
             "name": "Glitch Glide",
             "description": {
-                "fr": "Affronter vos amis ou vottre famille dans ce jeu de course délirant",
+                "fr": "Affrontez vos amis ou votre famille dans ce jeu de course délirant",
                 "en": "Take on your friends and family in this crazy racing game",
             },
             "pictures": [
@@ -114,8 +114,8 @@
             "language": "C#",
             "platforms": ["PC"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet j'ai passer du temps sur le post processing et l'environement pour donner un resultat minimaliste mais cohérant et beau",
-                "en": "I worked on the whole project exept the creation of sound asset. On this project. On this project i spend time on post processing to make a minimalist but coherent and beautiful result",
+                "fr": "J'ai travaillé sur l'intégralité du projet à l'exception de la création des assets sonores. Sur ce projet j'ai passé du temps sur le post-processing et l'environnement pour donner un résultat minimaliste mais cohérent et beau",
+                "en": "I worked on the whole project except the creation of sound asset. On this project. On this project i spend time on post processing to make a minimalist but coherent and beautiful result",
             },
             "team": {
                 "fr": "Projet Solo",
@@ -133,8 +133,8 @@
         {
             "name": "Undead Conundrum",
             "description": {
-                "fr": "Aider les mort vivant a retrouver leur chemins vers leur tombe dans ce casse tete inspirer du jeu RUSH",
-                "en": "Help the undead to find their path to ther graves int this brainteaser inspired by the game RUSH",
+                "fr": "Aider les morts-vivants à retrouver leur chemin vers leur tombe dans ce casse-tête inspiré du jeu RUSH",
+                "en": "Help the undead to find their path to their graves int this brainteaser inspired by the game RUSH",
             },
             "pictures": [
                 "rushTitleCard.gif",
@@ -143,7 +143,7 @@
             "language": "C#",
             "platforms": ["PC","Mobile"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet etait principalement un travail d'observation, le but etait de reproduire le plus fidélement le jeu RUSH developer par Two Tribes",
+                "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet était principalement un travail d'observation, le but était de reproduire le plus fidèlement le jeu RUSH développé par Two Tribes",
                 "en": "I worked on the entire project. This project was mainly a work of observation, the goal was to reproduce as faithfully as possible the game RUSH developed by Two Tribes",
             },
             "team": {
@@ -162,8 +162,8 @@
         {
             "name": "UnSeen",
             "description": {
-                "fr": "",
-                "en": "",
+                "fr": "Préparez-vous à affronter vos peurs. Traverser la ville sans vous faire repérer et retourner en sécurité. Dans ce platformer 2D à l'ambiance sordide sur le theme de la scopophobie",
+                "en": "Prepare to face your fears. Walk through the city undetected and return safely. In this 2D platformer with sordid atmosphere on the theme of scopophobia",
             },
             "pictures": [
                 "Unseen_Logo.png",
@@ -178,8 +178,8 @@
             "language": "C#",
             "platforms": ["PC","Mobile"],
             "role": {
-                "fr": "Developement et integration de l'UI,Integration des Animation du joueur,Integration sonore avec Fmod,Level Desing, Developpement des differente platforme",
-                "en": "",
+                "fr": "Développement et intégration de l'UI, Intégration des animations du joueur, Intégration sonore avec FMOD, Level Desing, Développement sur les différentes plateformes",
+                "en": "UI development and integration, Player animation integration, Sound integration with FMOD, Level Desing, Multy Platform development",
             },
             "team": {
                 "fr": "Une equipe de 15 personne : 8 Game Artist, 5 Gameplay Programmer & Designer et 3 Music & Sound Designer",
