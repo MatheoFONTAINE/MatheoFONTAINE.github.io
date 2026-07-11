@@ -65,10 +65,10 @@
  *  }
  */
 
- const data = {
+const data = {
     "biography": {
-        "fr": "Je m’appelle Mathéo FONTAINE, je suis étudiant en Game Design & Programming. Je vous souhaite la bienvenue sur mon portefolio. Étant polyvalent, je mets mon expérience en programmation gameplay, UI, création d’assets graphiques et level desing a profit dans mes projets. Je serais ravie de continuer à mettre ces compétences en pratique pour découvrir de nouvelles choses.",
-         "en": "My name is Mathéo FONTAINE, im a student in Game Design & Programming. Welcome to my portfolio, being versatile, I put my experience in gameplay programming, UI, creation of graphic assets and level design to good use in my projects. I will be pleased to put my skills to practice to discover new things  ",
+        "fr": "Je m'appelle Mathéo FONTAINE, Game Designer & Programmer. Je vous souhaite la bienvenue sur mon portfolio. Polyvalent, je mets à profit mon expérience en programmation gameplay, en UI, en création d'assets graphiques et en level design dans mes projets. Je serais ravi de continuer à mettre ces compétences en pratique afin de découvrir de nouvelles approches et de relever de nouveaux défis. ",
+        "en": "My name is Mathéo FONTAINE, Game Designer & Programmer. Welcome to my portfolio. As a versatile developer, I leverage my experience in gameplay programming, UI development, graphic asset creation, and level design across my projects.I am eager to continue applying these skills, explore new approaches, and take on new challenges. ",
     },
     "projects": [
         {
@@ -141,7 +141,7 @@
             ],
             "gameEngine": "Unity",
             "language": "C#",
-            "platforms": ["PC","Mobile"],
+            "platforms": ["PC", "Mobile"],
             "role": {
                 "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet était principalement un travail d'observation, le but était de reproduire le plus fidèlement le jeu RUSH développé par Two Tribes",
                 "en": "I worked on the entire project. This project was mainly a work of observation, the goal was to reproduce as faithfully as possible the game RUSH developed by Two Tribes",
@@ -176,7 +176,7 @@
             ],
             "gameEngine": "Unity",
             "language": "C#",
-            "platforms": ["PC","Mobile"],
+            "platforms": ["PC", "Mobile"],
             "role": {
                 "fr": "Développement et intégration de l'UI, Intégration des animations du joueur, Intégration sonore avec FMOD, Level Desing, Développement sur les différentes plateformes",
                 "en": "UI development and integration, Player animation integration, Sound integration with FMOD, Level Desing, Multy Platform development",
@@ -196,7 +196,7 @@
         },
     ],
     "ribbon": {
-        "display": true,
+        "display": false,
         "text": {
             "fr": "Je suis actuellement en recherche de stage !",
             "en": "Searching for a stage !",
