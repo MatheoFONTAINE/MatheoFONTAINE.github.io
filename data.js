@@ -108,7 +108,7 @@ const data = {
                 "en": "Take on your friends and family in this crazy racing game",
             },
             "pictures": [
-                "GlitchGlide.gif",
+                "GlitchGlide.webm",
             ],
             "gameEngine": "Godot",
             "language": "C#",
@@ -137,13 +137,13 @@ const data = {
                 "en": "Help the undead to find their path to their graves int this brainteaser inspired by the game RUSH",
             },
             "pictures": [
-                "rushTitleCard.gif",
+                "UndeadConundrum.webm",
             ],
             "gameEngine": "Unity",
             "language": "C#",
             "platforms": ["PC", "Mobile"],
             "role": {
-                "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet était principalement un travail d'observation, le but était de reproduire le plus fidèlement le jeu RUSH développé par Two Tribes",
+                "fr": "J'ai travaillé sur l'intégralité du projet. Ce projet était principalement un travail d'observation, le but était de reproduire le plus fidèlement le jeu RUSH développé par Two Tribes et d'y ajouter un nouveau theme ainsi que de nouveau niveau",
                 "en": "I worked on the entire project. This project was mainly a work of observation, the goal was to reproduce as faithfully as possible the game RUSH developed by Two Tribes",
             },
             "team": {
