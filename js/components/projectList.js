@@ -18,10 +18,10 @@ const projectList = {
 
             // Picture
             if (project.pictures[0].split('.').at(-1) === 'webm') {
-                newProject.querySelector('video source').src = 'image/' + project.pictures[0];
+                newProject.querySelector('video source').src = `image/projects/${project.name.replace(/\s/g, "")}/${project.pictures[0]}`;
                 newProject.querySelector('img').remove();
             } else {
-                newProject.querySelector('img').src = 'image/' + project.pictures[0];
+                newProject.querySelector('img').src = `image/projects/${project.name.replace(/\s/g, "")}/${project.pictures[0]}`;
                 newProject.querySelector('video').remove();
             }
 

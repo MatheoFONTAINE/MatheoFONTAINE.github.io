@@ -24,10 +24,10 @@ const mainSlider = {
 
                 // Picture
                 if (project.pictures[0].split('.').at(-1) === 'webm') {
-                    newSlide.querySelector('video source').src = 'image/' + project.pictures[0];
+                    newSlide.querySelector('video source').src = `image/projects/${project.name.replace(/\s/g, "")}/${project.pictures[0]}`;
                     newSlide.querySelector('img').remove();
                 } else {
-                    newSlide.querySelector('img').src = 'image/' + project.pictures[0];
+                    newSlide.querySelector('img').src = `image/projects/${project.name.replace(/\s/g, "")}/${project.pictures[0]}`;
                     newSlide.querySelector('video').remove();
                 }
     

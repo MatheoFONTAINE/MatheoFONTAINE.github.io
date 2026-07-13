@@ -143,14 +143,14 @@ const projectModal = {
 
                 const newSource = document.createElement('source');
                 newSource.type = "video/webm";
-                newSource.src = 'image/' + picture;
+                newSource.src = `image/projects/${project.name.replace(/\s/g, "")}/${picture}`;
 
                 newVideo.appendChild(newSource);
                 newSlide.appendChild(newVideo);
             } else {
                 const newImg = document.createElement('img');
                 newImg.classList.add('img');
-                newImg.src = 'image/' + picture;
+                newImg.src = `image/projects/${project.name.replace(/\s/g, "")}/${picture}`;
                 newImg.alt = document.querySelector('html').getAttribute('lang') === 'fr' ? 'Image du jeu' : 'Game picture';
                 
                 newSlide.appendChild(newImg);

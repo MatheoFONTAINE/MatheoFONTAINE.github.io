@@ -109,6 +109,7 @@ const data = {
             },
             "pictures": [
                 "GlitchGlide.webm",
+                "GlitchGlideOne.webp",
             ],
             "gameEngine": "Godot",
             "language": "C#",
