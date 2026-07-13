@@ -17,7 +17,13 @@ const projectList = {
             //? Filling new node
 
             // Picture
-            newProject.querySelector('img').src = 'image/' + project.pictures[0];
+            if (project.pictures[0].split('.').at(-1) === 'webm') {
+                newProject.querySelector('video source').src = 'image/' + project.pictures[0];
+                newProject.querySelector('img').remove();
+            } else {
+                newProject.querySelector('img').src = 'image/' + project.pictures[0];
+                newProject.querySelector('video').remove();
+            }
 
             // Title
             newProject.querySelector('h3[lang=fr]').textContent = project.name.fr ?? project.name;

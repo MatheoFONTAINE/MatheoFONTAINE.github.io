@@ -23,7 +23,13 @@ const mainSlider = {
                 //? Filling new node
 
                 // Picture
-                newSlide.querySelector('img').src = 'image/' + project.pictures[0];
+                if (project.pictures[0].split('.').at(-1) === 'webm') {
+                    newSlide.querySelector('video source').src = 'image/' + project.pictures[0];
+                    newSlide.querySelector('img').remove();
+                } else {
+                    newSlide.querySelector('img').src = 'image/' + project.pictures[0];
+                    newSlide.querySelector('video').remove();
+                }
     
                 // Title
                 newSlide.querySelector('h3[lang=fr]').textContent = project.name.fr ?? project.name;
@@ -38,8 +44,8 @@ const mainSlider = {
                 newSlideElm.dataset.index = index;
 
                 // Title position
-                newSlideElm.querySelector('img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=fr]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('img').width)/2 + 'px';});
-                newSlideElm.querySelector('img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=en]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('img').width)/2 + 'px';});
+                newSlideElm.querySelector('.img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=fr]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('.img').offsetWidth)/2 + 'px';});
+                newSlideElm.querySelector('.img').addEventListener('load', () => {newSlideElm.querySelector('h3[lang=en]').style.marginRight = (newSlideElm.offsetWidth - newSlideElm.querySelector('.img').offsetWidth)/2 + 'px';});
 
                 slidesCounter++;
             }
@@ -75,8 +81,8 @@ const mainSlider = {
     },
     resizeHandler: function () {
         document.querySelectorAll('.slider-card').forEach(slideElm => {
-            slideElm.querySelector('h3[lang=fr]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
-            slideElm.querySelector('h3[lang=en]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('img').width)/2 + 'px';
+            slideElm.querySelector('h3[lang=fr]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('.img').offsetWidth)/2 + 'px';
+            slideElm.querySelector('h3[lang=en]').style.marginRight = (slideElm.offsetWidth - slideElm.querySelector('.img').offsetWidth)/2 + 'px';
         });
         
     },

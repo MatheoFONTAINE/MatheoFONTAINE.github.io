@@ -71,7 +71,7 @@
     display: flex;
 }
 
-.project-modal .picture-slider img {
+.project-modal .picture-slider .img {
     object-fit: contain;
     margin: auto;
     height: -webkit-fill-available;

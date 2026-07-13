@@ -133,11 +133,30 @@ const projectModal = {
         // Picture slider
         project.pictures.forEach(picture => {
             const newSlide = document.createElement('div');
-            const newImg = document.createElement('img');
-            newImg.src = 'image/' + picture;
-            newImg.alt = document.querySelector('html').getAttribute('lang') === 'fr' ? 'Image du jeu' : 'Game picture';
+            if (picture.split('.').at(-1) === 'webm') {
+                const newVideo = document.createElement('video');
+                newVideo.classList.add('img');
+                newVideo.toggleAttribute('autoplay');
+                newVideo.toggleAttribute('loop');
+                newVideo.toggleAttribute('muted');
+                newVideo.toggleAttribute('playsinline');
 
-            newSlide.appendChild(newImg);
+                const newSource = document.createElement('source');
+                newSource.type = "video/webm";
+                newSource.src = 'image/' + picture;
+
+                newVideo.appendChild(newSource);
+                newSlide.appendChild(newVideo);
+            } else {
+                const newImg = document.createElement('img');
+                newImg.classList.add('img');
+                newImg.src = 'image/' + picture;
+                newImg.alt = document.querySelector('html').getAttribute('lang') === 'fr' ? 'Image du jeu' : 'Game picture';
+                
+                newSlide.appendChild(newImg);
+            }
+            
+
             sliderElm.appendChild(newSlide);
         });
 
