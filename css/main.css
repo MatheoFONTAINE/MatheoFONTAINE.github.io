@@ -38,7 +38,7 @@ html[lang=en] [lang=fr] {display: none;}
 
 body {
     height: 100vh;
-    background: var(--c2) url(../image/bg1.png) center center/cover no-repeat;
+    background: var(--c2) url(../image/bg1.webp) center center/cover no-repeat;
     backdrop-filter: blur(3px) brightness(75%);
 
     overflow: hidden;
